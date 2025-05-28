@@ -26,9 +26,9 @@ export default function ContactPage() {
           <div>
             <h2 className="text-2xl font-semibold mb-2">Address</h2>
             <p className="text-gray-300">
-              Flavours of India Cloud Kitchen <br />
-              123 Spice Street, Tandoori Lane <br />
-              Mumbai, Maharashtra – 400001
+              Fork and Sticks Cloud Kitchen <br />
+              chaat wali gali Clock Tower <br />
+              Dehradun uttarakhand – 248001
             </p>
           </div>
 

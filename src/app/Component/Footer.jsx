@@ -117,7 +117,7 @@ export default function Footer() {
           </div>
 
           <p className="text-[#d4a45a] text-xs">
-            &copy; Copyright ThemeGoods All Right Reserved.
+            &copy; Copyright CodewareIT Pvt Ltd All Right Reserved.
           </p>
         </div>
       </div>
