@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function HomePage() {
   return (
     <div className="relative h-screen w-full text-white bg-[#0a0f0f] ">
@@ -26,9 +27,11 @@ export default function HomePage() {
           <br />
           straight from our cloud kitchen to your doorstep.
         </p>
-        <button className="mt-8 border-2 border-yellow-600 px-6 py-3 text-xl tracking-wide hover:bg-yellow-600 transition">
-          VIEW MENU
-        </button>
+        <Link href='/menu'>
+          <button className="mt-8 border-2 border-yellow-600 px-6 py-3 text-xl tracking-wide hover:bg-yellow-600 transition">
+            VIEW MENU
+          </button>
+        </Link>
       </div>
     </div>
   );

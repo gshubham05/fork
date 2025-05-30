@@ -91,11 +91,7 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
-          <li>
-            <button className="border border-white text-white px-4 py-2 mt-4 hover:bg-white hover:text-black transition-all">
-              Order Now
-            </button>
-          </li>
+         
         </ul>
       </div>
     </>

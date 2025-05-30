@@ -45,9 +45,7 @@ export default function ChefRecommend() {
           kitchen and delivered hot to your doorstep — this is comfort food,
           redefined.
         </p>
-        <button className="border border-[#DDAA63] text-white px-8 py-3 text-lg tracking-widest hover:bg-[#DDAA63] hover:text-black transition">
-          ORDER NOW
-        </button>
+       
       </div>
 
       <div className="relative w-full max-w-md mt-6 sm:mt-10 md:mt-20">

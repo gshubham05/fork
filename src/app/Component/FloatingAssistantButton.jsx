@@ -7,8 +7,8 @@ export default function FloatingAssistantButton({ onClick }) {
   const [scrolling, setScrolling] = useState(false);
 
   useEffect(() => {
-    // Show the button after 1 second initially
-    const timer = setTimeout(() => setVisible(true), 1000);
+    // Show the button after 3 second initially
+    const timer = setTimeout(() => setVisible(true), 3000);
 
     return () => clearTimeout(timer);
   }, []);
