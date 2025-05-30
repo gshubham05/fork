@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import Herosection from './Component/Herosection';
 import HeroAbout from './Component/HeroAbout';
-import Ourchef from './Component/Ourchef';
 import Menu from './Component/Menu';
 import OurServices from './Component/OurServices';
 import OurTeam from './Component/Ourteam';
@@ -18,7 +17,6 @@ export default function Home() {
     <>
       <Herosection />
       <HeroAbout />
-      <Ourchef />
       <Menu />
       <OurServices />
       <OurTeam />

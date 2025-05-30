@@ -1,5 +1,7 @@
 'use client';
+
 import { useEffect, useState } from 'react';
+
 export default function OrderModal({ show, onClose }) {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -18,10 +20,8 @@ export default function OrderModal({ show, onClose }) {
       }
     }, 1000);
 
-    // Try opening the app
     window.location.href = appUrl;
 
-    // Clear timeout after 2 seconds (cleanup)
     setTimeout(() => clearTimeout(timeout), 2000);
   };
 
@@ -59,10 +59,10 @@ export default function OrderModal({ show, onClose }) {
             onClick={() => {
               isMobile
                 ? openAppWithFallback(
-                    'zomato://',
-                    'https://play.google.com/store/apps/details?id=com.application.zomato'
+                    'https://zomato.onelink.me/xqzv/z3ww6vwb',
+                    'https://zomato.onelink.me/xqzv/z3ww6vwb'
                   )
-                : window.open('https://www.zomato.com', '_blank');
+                : window.open('https://zomato.onelink.me/xqzv/z3ww6vwb', '_blank');
             }}
             className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700"
           >
@@ -73,10 +73,10 @@ export default function OrderModal({ show, onClose }) {
             onClick={() => {
               isMobile
                 ? openAppWithFallback(
-                    'swiggy://',
-                    'https://play.google.com/store/apps/details?id=in.swiggy.android'
+                    'https://www.swiggy.com/menu/1093013?source=sharing',
+                    'https://www.swiggy.com/menu/1093013?source=sharing'
                   )
-                : window.open('https://www.swiggy.com', '_blank');
+                : window.open('https://www.swiggy.com/menu/1093013?source=sharing', '_blank');
             }}
             className="bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-orange-600"
           >
