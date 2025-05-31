@@ -1,14 +1,13 @@
-
-'use client';
-import { useState } from 'react';
-import Herosection from './Component/Herosection';
-import HeroAbout from './Component/HeroAbout';
-import Ourchef from './Component/Ourchef';
-import Menu from './Component/Menu';
-import OurServices from './Component/OurServices';
-import Testimonials from './Component/Testimonials';
-import OrderModal from './Component/Ordermodel';
-import FloatingAssistantButton from './Component/FloatingAssistantButton';
+"use client";
+import { useState } from "react";
+import Herosection from "./Component/Herosection";
+import HeroAbout from "./Component/HeroAbout";
+import Ourchef from "./Component/Ourchef";
+import Menu from "./Component/Menu";
+import OurServices from "./Component/OurServices";
+import Testimonials from "./Component/Testimonials";
+import OrderModal from "./Component/Ordermodel";
+import FloatingAssistantButton from "./Component/FloatingAssistantButton";
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false);
@@ -17,7 +16,7 @@ export default function Home() {
     <>
       <Herosection />
       <HeroAbout />
-      <Ourchef/>
+      <Ourchef />
       <Menu />
       <OurServices />
       <Testimonials />

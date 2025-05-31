@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function MenuItemCard({ label, name, price, desc }) {
   return (
@@ -161,6 +162,13 @@ export default function MenuSection() {
               ))}
             </div>
           </div>
+        </div>
+        <div className="flex justify-center mt-8">
+          <Link href="/menu">
+            <button className="border-2 border-yellow-600 px-6 py-3 text-xl tracking-wide hover:bg-yellow-600 hover:text-black transition duration-300">
+              Explore Our Full Menu
+            </button>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,5 +1,10 @@
 "use client";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination, Autoplay } from "swiper/modules";
+
 export default function Testimonials() {
   const testimonials = [
     {
@@ -49,22 +54,34 @@ export default function Testimonials() {
         <h2 className="text-4xl md:text-5xl font-bold mt-2">Testimonials</h2>
       </div>
 
-      <div className="grid gap-10 md:grid-cols-3">
+      <Swiper
+        modules={[Pagination, Autoplay]}
+        spaceBetween={50}
+        slidesPerView={1}
+        pagination={{ clickable: true }}
+        autoplay={{ delay: 4000, disableOnInteraction: false }}
+        breakpoints={{
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
+      >
         {testimonials.map((t, index) => (
-          <div
-            key={index}
-            className="bg-[#1a1f1f] rounded-xl p-6 shadow-md border border-[#c89453]/30 hover:border-[#c89453] transition"
-          >
-            <p className="text-sm text-gray-300 italic mb-4">“{t.comment}”</p>
-            <div>
-              <h4 className="text-lg font-semibold text-[#d4a45a]">
-                — {t.name}
-              </h4>
-              <p className="text-sm text-gray-400">{t.location}</p>
+          <SwiperSlide key={index}>
+            <div className="bg-[#1a1f1f] rounded-xl p-6 shadow-md border border-[#c89453]/30 hover:border-[#c89453] transition m-10 h-[250px] flex flex-col justify-between">
+              <p className="text-sm text-gray-300 italic mb-4 flex-grow">
+                “{t.comment}”
+              </p>
+              <div>
+                <h4 className="text-lg font-semibold text-[#d4a45a]">
+                  — {t.name}
+                </h4>
+                <p className="text-sm text-gray-400">{t.location}</p>
+              </div>
             </div>
-          </div>
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
     </section>
   );
 }

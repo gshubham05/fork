@@ -22,25 +22,25 @@ export default function Footer() {
         {/* Middle Section: Navigation Links */}
         <nav className="flex flex-col items-center justify-center space-y-3 w-full md:w-1/3 py-6 md:py-0">
           <a
-            href="#home"
+            href="/"
             className="hover:text-[#c89453] transition text-sm uppercase tracking-wide text-white"
           >
             Home
           </a>
           <a
-            href="#menu"
+            href="/menu"
             className="hover:text-[#c89453] transition text-sm uppercase tracking-wide text-white"
           >
             Menu
           </a>
           <a
-            href="#testimonials"
+            href="/about"
             className="hover:text-[#c89453] transition text-sm uppercase tracking-wide text-white"
           >
             About
           </a>
           <a
-            href="#contact"
+            href="/contact"
             className="hover:text-[#c89453] transition text-sm uppercase tracking-wide text-white"
           >
             Contact

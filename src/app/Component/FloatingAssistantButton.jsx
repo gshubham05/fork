@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 export default function FloatingAssistantButton({ onClick }) {
   const [visible, setVisible] = useState(false);
@@ -8,7 +8,7 @@ export default function FloatingAssistantButton({ onClick }) {
 
   useEffect(() => {
     // Show the button after 3 second initially
-    const timer = setTimeout(() => setVisible(true), 3000);
+    const timer = setTimeout(() => setVisible(true), 9000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -26,10 +26,10 @@ export default function FloatingAssistantButton({ onClick }) {
       }, 300); // Show again 300ms after scroll stops
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
       clearTimeout(scrollTimeout);
     };
   }, []);
@@ -41,7 +41,7 @@ export default function FloatingAssistantButton({ onClick }) {
       onClick={onClick}
       className={`fixed bottom-10 right-0 flex items-center gap-2 bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-3 rounded-l-full shadow-lg cursor-pointer z-50
         transform transition-transform duration-700 ease-in-out
-        ${shouldShow ? 'translate-x-0' : 'translate-x-full'}
+        ${shouldShow ? "translate-x-0" : "translate-x-full"}
       `}
       aria-label="Order Assistant"
       title="Order Assistant"

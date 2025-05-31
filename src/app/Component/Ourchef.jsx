@@ -45,7 +45,6 @@ export default function ChefRecommend() {
           kitchen and delivered hot to your doorstep — this is comfort food,
           redefined.
         </p>
-       
       </div>
 
       <div className="relative w-full max-w-md mt-6 sm:mt-10 md:mt-20">

@@ -1,15 +1,10 @@
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaTwitter,
-  FaLinkedinIn,
-} from "react-icons/fa";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
 export default function ContactPage() {
   return (
-    <div className="bg-[#0a0f0f] text-white min-h-screen px-6 md:px-20 py-20">
+    <div className="bg-[#0a0f0f] text-white min-h-screen px-6 md:px-20 py-20 space-y-16">
       {/* Heading */}
-      <div className="text-center mb-16">
+      <div className="text-center">
         <p className="text-yellow-600 text-sm uppercase tracking-widest">
           Get in Touch
         </p>
@@ -25,21 +20,21 @@ export default function ContactPage() {
         <div className="space-y-8">
           <div>
             <h2 className="text-2xl font-semibold mb-2">Address</h2>
-            <p className="text-gray-300">
+            <address className="not-italic text-gray-300 leading-relaxed">
               Fork and Sticks Cloud Kitchen <br />
-              chaat wali gali Clock Tower <br />
-              Dehradun uttarakhand – 248001
-            </p>
+              Chaat Wali Gali, Near Paltan Bazar <br />
+              Dehradun, Uttarakhand – 248001
+            </address>
           </div>
 
           <div>
             <h2 className="text-2xl font-semibold mb-2">Phone</h2>
-            <p className="text-gray-300">+91 98765 43210</p>
+            <p className="text-gray-300">+91 6398118280</p>
           </div>
 
           <div>
             <h2 className="text-2xl font-semibold mb-2">Email</h2>
-            <p className="text-gray-300">support@flavoursofindia.in</p>
+            <p className="text-gray-300">support@forkandsticks.in</p>
           </div>
         </div>
 
@@ -58,15 +53,24 @@ export default function ContactPage() {
             <div className="flex gap-4 mt-2 items-center text-yellow-600 text-xl">
               <FaFacebookF className="hover:text-yellow-500 transition" />
               <FaInstagram className="hover:text-yellow-500 transition" />
-
-              {/* Divider */}
-              <div className="w-px h-6 bg-yellow-600 mx-2" />
-
-              <FaTwitter className="hover:text-yellow-500 transition" />
-              <FaLinkedinIn className="hover:text-yellow-500 transition" />
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Google Map Embed */}
+      {/* Google Map Embed */}
+      <div className="max-w-5xl mx-auto">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.957084582652!2d78.0373316738371!3d30.323738505286922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3909293b5bd4df4b%3A0xb33cce6b9e773c8!2sFork%20and%20Stick!5e0!3m2!1sen!2sin!4v1748710825061!5m2!1sen!2sin"
+          width="100%"
+          height="450"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          className="rounded-xl shadow-lg"
+        ></iframe>
       </div>
     </div>
   );

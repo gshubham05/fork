@@ -10,7 +10,7 @@ export default function HomePage() {
         playsInline
         className="absolute inset-0 w-full h-full object-cover"
       >
-        <source src="/hero.mp4" type="video/mp4" />
+        <source src="/mobilehero.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
@@ -27,11 +27,6 @@ export default function HomePage() {
           <br />
           straight from our cloud kitchen to your doorstep.
         </p>
-        <Link href='/menu'>
-          <button className="mt-8 border-2 border-yellow-600 px-6 py-3 text-xl tracking-wide hover:bg-yellow-600 transition">
-            VIEW MENU
-          </button>
-        </Link>
       </div>
     </div>
   );
