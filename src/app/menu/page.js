@@ -46,7 +46,7 @@ export default function MenuPage() {
     {
       title: "Starters – Non-Veg",
       description: "Delicious meaty appetizers for a bold beginning.",
-      image: "/nonvegs.jpg",
+      image: "/TD-3811.jpg",
       items: [
         {
           name: "Chicken Tikka",
