@@ -6,7 +6,7 @@ export default function Home() {
       {/* Left image */}
       <div className="w-full md:w-1/2 h-[300px] sm:h-[400px] md:h-auto relative">
         <Image
-          src="/home.jpg"
+          src="/TD-3829.jpg"
           alt="Cloud Kitchen Interior"
           className="brightness-90 object-cover"
           fill // Automatically makes it responsive inside relative container
