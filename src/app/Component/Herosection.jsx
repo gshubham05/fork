@@ -22,10 +22,12 @@ export default function HomePage() {
         <h1 className="text-6xl md:text-8xl font-bold leading-tight">
           Flavours of <br /> India, Delivered
         </h1>
-        <p className="mt-6 text-xl">
-          From biryanis to butter chicken — experience the rich taste of India
+        <p className="mt-6 text-xl leading-relaxed text-gray-100">
+          From <span className="font-semibold">crispy chilli potatoes</span> to{" "}
+          <span className="font-semibold">butter chicken</span> — experience the
+          rich taste of India,
           <br />
-          straight from our cloud kitchen to your doorstep.
+          delivered fresh from our cloud kitchen to your doorstep.
         </p>
       </div>
     </div>

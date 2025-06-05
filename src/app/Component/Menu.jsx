@@ -23,36 +23,36 @@ function MenuItemCard({ label, name, price, desc }) {
 export default function MenuSection() {
   const starters = [
     {
-      name: "Chili Paneer",
-      price: 240,
-      desc: "Paneer / Bell Peppers / Indo-Chinese Sauce",
+      name: "Crispy Chilli Potato",
+      price: 169,
+      desc: "Fried / Saucy / Garlic & Capsicum",
       label: "Recommended",
     },
     {
-      name: "Spring Rolls",
-      price: 120,
-      desc: "Veggies / Noodles / Crispy Wrap",
+      name: "Honey Crispy Potato",
+      price: 169,
+      desc: "Sweet & Spicy / Sesame",
     },
     {
-      name: "Chicken Lollipop",
-      price: 260,
-      desc: "Chicken / Schezwan Sauce / Fried",
+      name: "Classic Paneer Tikka",
+      price: 229,
+      desc: "Tandoori / Spiced / Cottage Cheese",
       label: "New",
     },
     {
-      name: "Crispy Corn",
-      price: 180,
+      name: "Crispy Corn Salt Pepper",
+      price: 199,
       desc: "Golden Corn / Herbs / Spices",
     },
     {
-      name: "Veg Manchurian Balls",
-      price: 200,
-      desc: "Cabbage / Carrot / Tangy Sauce",
+      name: "Classic Chilli Paneer",
+      price: 229,
+      desc: "Paneer / Onion / Bell Peppers",
     },
     {
-      name: "Dragon Chicken",
-      price: 270,
-      desc: "Chicken / Garlic / Sweet-Spicy Glaze",
+      name: "Chilli Chaap Dry",
+      price: 229,
+      desc: "Soya Chunks / Rich Chilli Sauce",
       label: "Recommended",
     },
   ];
@@ -60,35 +60,35 @@ export default function MenuSection() {
   const mainCourse = [
     {
       name: "Schezwan Fried Rice",
-      price: 220,
+      price: 199,
       desc: "Rice / Chili Garlic Sauce / Mixed Veg",
     },
     {
-      name: "Hakka Noodles",
-      price: 210,
-      desc: "Noodles / Soy Sauce / Veg or Chicken",
+      name: "Hakka Noodles (Non-Veg)",
+      price: 209,
+      desc: "Chicken / Soy Sauce / Garlic",
     },
     {
-      name: "Paneer Chilli Gravy",
-      price: 250,
-      desc: "Paneer / Capsicum / Spicy Gravy",
+      name: "Veg Manchurian Gravy",
+      price: 199,
+      desc: "Veg Balls / Tangy Soy Sauce",
       label: "New",
     },
     {
-      name: "Chicken Manchurian Gravy",
-      price: 270,
-      desc: "Minced Chicken / Tangy Sauce / Garlic",
+      name: "Chilli Chicken Gravy",
+      price: 249,
+      desc: "Chicken / Garlic / Bell Peppers",
     },
     {
-      name: "Veg Triple Schezwan",
-      price: 260,
-      desc: "Rice + Noodles / Schezwan Sauce / Manchurian",
+      name: "Chicken Schezwan Fried Rice",
+      price: 209,
+      desc: "Chicken / Veggies / Schezwan Sauce",
       label: "Recommended",
     },
     {
       name: "Egg Fried Rice",
       price: 190,
-      desc: "Rice / Scrambled Egg / Spring Onion",
+      desc: "Egg / Rice / Spring Onion",
     },
   ];
 

@@ -38,8 +38,9 @@ const Navbar = () => {
             : "bg-black/30 text-white backdrop-blur-md shadow-md"
         }`}
       >
-        <h1 className="text-2xl font-bold">Fork and Sticks</h1>
-
+        <Link href="/">
+          <h1 className="text-2xl font-bold">Fork and Sticks</h1>
+        </Link>
         {/* Desktop Links */}
         <ul className="hidden md:flex space-x-6 font-semibold">
           {navLinks.map(({ name, href }) => (
@@ -91,7 +92,6 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
-         
         </ul>
       </div>
     </>

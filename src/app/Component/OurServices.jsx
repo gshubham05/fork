@@ -59,7 +59,7 @@ export default function OurServices() {
         </p>
         <div className="flex justify-center gap-8">
           <a
-            href="https://www.swiggy.com"
+            href="https://www.swiggy.com/menu/1093013?source=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-[#f58634] hover:underline"
@@ -68,7 +68,7 @@ export default function OurServices() {
             <span className="text-lg">Swiggy</span>
           </a>
           <a
-            href="https://www.zomato.com"
+            href="https://zomato.onelink.me/xqzv/z3ww6vwb"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-[#e23744] hover:underline"

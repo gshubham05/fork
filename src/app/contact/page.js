@@ -1,4 +1,6 @@
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
+"use client";
+
+import { FaInstagram } from "react-icons/fa";
 
 export default function ContactPage() {
   return (
@@ -29,12 +31,22 @@ export default function ContactPage() {
 
           <div>
             <h2 className="text-2xl font-semibold mb-2">Phone</h2>
-            <p className="text-gray-300">+91 6398118280</p>
+            <a
+              href="tel:+916398118280"
+              className="text-gray-300 hover:text-yellow-600 transition"
+            >
+              +91 6398118280
+            </a>
           </div>
 
           <div>
             <h2 className="text-2xl font-semibold mb-2">Email</h2>
-            <p className="text-gray-300">support@forkandsticks.in</p>
+            <a
+              href="mailto:support@forkandsticks.in"
+              className="text-gray-300 hover:text-yellow-600 transition"
+            >
+              support@forkandsticks.in
+            </a>
           </div>
         </div>
 
@@ -51,14 +63,20 @@ export default function ContactPage() {
           <div>
             <h2 className="text-2xl font-semibold mb-2">Follow Us</h2>
             <div className="flex gap-4 mt-2 items-center text-yellow-600 text-xl">
-              <FaFacebookF className="hover:text-yellow-500 transition" />
-              <FaInstagram className="hover:text-yellow-500 transition" />
+              <a
+                href="https://www.instagram.com/forkandstickss?igsh=MWxucGJzcDkycnpxNw==" // Replace with your actual handle
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-yellow-500 transition"
+                aria-label="Instagram"
+              >
+                <FaInstagram />
+              </a>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Google Map Embed */}
       {/* Google Map Embed */}
       <div className="max-w-5xl mx-auto">
         <iframe
@@ -70,6 +88,7 @@ export default function ContactPage() {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           className="rounded-xl shadow-lg"
+          aria-label="Google Map showing Fork and Sticks"
         ></iframe>
       </div>
     </div>
