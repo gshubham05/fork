@@ -22,9 +22,9 @@ export default function Home() {
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold leading-snug">
           Bold Indian flavours — <em className="italic">crafted with care</em>,
           <br className="hidden sm:block" />
-          sealed fresh, and delivered
+          sealed fresh, and delivered right to your
           <br className="hidden sm:block" />
-          right to your <em className="italic">doorstep</em>.
+          <em className="italic"> doorstep</em>.
         </h1>
       </div>
 

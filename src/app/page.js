@@ -8,6 +8,7 @@ import OurServices from "./Component/OurServices";
 import Testimonials from "./Component/Testimonials";
 import OrderModal from "./Component/Ordermodel";
 import FloatingAssistantButton from "./Component/FloatingAssistantButton";
+import Achievements from "./Component/Achievements";
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false);
@@ -17,6 +18,7 @@ export default function Home() {
       <Herosection />
       <HeroAbout />
       <Ourchef />
+      <Achievements />
       <Menu />
       <OurServices />
       <Testimonials />
