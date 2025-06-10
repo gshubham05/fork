@@ -1,15 +1,30 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 export default function OrderModal({ show, onClose }) {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const userAgent = typeof window !== 'undefined' ? navigator.userAgent : '';
-    const mobileRegex = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+    const userAgent = typeof window !== "undefined" ? navigator.userAgent : "";
+    const mobileRegex =
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|Tablet/i;
     setIsMobile(mobileRegex.test(userAgent));
   }, []);
+
+  useEffect(() => {
+    if (show) document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "";
+    return () => (document.body.style.overflow = "");
+  }, [show]);
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") onClose();
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [onClose]);
 
   const openAppWithFallback = (appUrl, fallbackUrl) => {
     const now = new Date().getTime();
@@ -19,21 +34,19 @@ export default function OrderModal({ show, onClose }) {
         window.location.href = fallbackUrl;
       }
     }, 1000);
-
     window.location.href = appUrl;
-
     setTimeout(() => clearTimeout(timeout), 2000);
   };
 
   if (!show) return null;
 
   return (
-    <div className="fixed inset-0 bg-white/10 backdrop-blur-sm flex items-center justify-center z-50">
-      <div className="relative bg-white p-6 rounded-2xl max-w-sm w-full text-center shadow-2xl">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-sm">
+      <div className="relative w-full max-w-md rounded-2xl bg-white p-6 shadow-xl">
+        {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-3 right-3 text-gray-400 hover:text-black transition"
-          aria-label="Close"
+          className="absolute right-4 top-4 text-gray-400 hover:text-black"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -51,34 +64,62 @@ export default function OrderModal({ show, onClose }) {
           </svg>
         </button>
 
-        <h2 className="text-xl font-semibold mb-2 text-black">Order Online</h2>
-        <p className="mb-4 text-gray-800">We’re on Zomato and Swiggy!</p>
+        {/* Modal Content */}
+        <h2 className="text-2xl font-bold text-center text-black mb-2">
+          🍽️ Order From Us Directly
+        </h2>
+        <p className="text-center text-gray-700 mb-6">
+          ✅ You can now order directly from our website or through your
+          favorite apps.
+        </p>
 
-        <div className="flex justify-center gap-4 mb-4">
+        {/* Website Order Button */}
+        <div className="mb-4">
           <button
-            onClick={() => {
+            onClick={() => (window.location.href = "/menu")}
+            className="w-full bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-md transition"
+          >
+            Order on Our Website
+          </button>
+        </div>
+
+        {/* Divider */}
+        <div className="text-center text-gray-400 text-sm mb-3">
+          Also available on
+        </div>
+
+        {/* App Buttons */}
+        <div className="flex justify-center gap-4">
+          <button
+            onClick={() =>
               isMobile
                 ? openAppWithFallback(
-                    'https://zomato.onelink.me/xqzv/z3ww6vwb',
-                    'https://zomato.onelink.me/xqzv/z3ww6vwb'
+                    "https://zomato.onelink.me/xqzv/z3ww6vwb",
+                    "https://zomato.onelink.me/xqzv/z3ww6vwb"
                   )
-                : window.open('https://zomato.onelink.me/xqzv/z3ww6vwb', '_blank');
-            }}
-            className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700"
+                : window.open(
+                    "https://zomato.onelink.me/xqzv/z3ww6vwb",
+                    "_blank"
+                  )
+            }
+            className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md font-medium transition"
           >
             Zomato
           </button>
 
           <button
-            onClick={() => {
+            onClick={() =>
               isMobile
                 ? openAppWithFallback(
-                    'https://www.swiggy.com/menu/1093013?source=sharing',
-                    'https://www.swiggy.com/menu/1093013?source=sharing'
+                    "https://www.swiggy.com/menu/1093013?source=sharing",
+                    "https://www.swiggy.com/menu/1093013?source=sharing"
                   )
-                : window.open('https://www.swiggy.com/menu/1093013?source=sharing', '_blank');
-            }}
-            className="bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-orange-600"
+                : window.open(
+                    "https://www.swiggy.com/menu/1093013?source=sharing",
+                    "_blank"
+                  )
+            }
+            className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md font-medium transition"
           >
             Swiggy
           </button>

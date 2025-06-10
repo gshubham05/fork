@@ -27,7 +27,7 @@ export default function OrderModal({ show, onClose, selectedItems }) {
       .join("\n")}\n\n💰 Total: ₹${totalPrice}`;
 
     // ✅ Replace number here with your own WhatsApp number (add country code)
-    const phone = "919837218345"; // Example: +91 India
+    const phone = "916398118280"; // Example: +91 India
     const encodedText = encodeURIComponent(orderText);
     window.open(`https://wa.me/${phone}?text=${encodedText}`, "_blank");
 
