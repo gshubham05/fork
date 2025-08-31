@@ -186,4 +186,4 @@ export default function MenuPage() {
       ...prev,
       [itemId]: { quantity: value },
     }));
-  };
+  }
