@@ -23,8 +23,8 @@ export default function ContactPage() {
           <div>
             <h2 className="text-2xl font-semibold mb-2">Address</h2>
             <address className="not-italic text-gray-300 leading-relaxed">
-              Fork and Sticks Cloud Kitchen <br />
-              Chaat Wali Gali, Near Paltan Bazar <br />
+              Fork and Sticks <br />
+              85 Karanpur Market, Near Survey Chowk <br />
               Dehradun, Uttarakhand – 248001
             </address>
           </div>
@@ -33,9 +33,15 @@ export default function ContactPage() {
             <h2 className="text-2xl font-semibold mb-2">Phone</h2>
             <a
               href="tel:+916398118280"
-              className="text-gray-300 hover:text-yellow-600 transition"
+              className="text-gray-300 hover:text-yellow-600 me-2 transition"
             >
               +91 6398118280
+            </a>
+                 <a
+              href="tel:+917906860858"
+              className="text-gray-300 hover:text-yellow-600 transition"
+            >
+              +91 7906860858
             </a>
           </div>
 
