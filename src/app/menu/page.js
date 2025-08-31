@@ -187,3 +187,4 @@ export default function MenuPage() {
       [itemId]: { quantity: value },
     }));
   }
+}
