@@ -170,7 +170,7 @@ const menuItems = {
   ],
 };
 
-export default function MenuPage() {
+export default function page() {
   const [activeCategory, setActiveCategory] = useState("Soups");
   const [selectedItems, setSelectedItems] = useState({});
 
