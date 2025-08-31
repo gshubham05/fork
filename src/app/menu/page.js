@@ -1,10 +1,3 @@
-Perfect 🚀 Thanks for sharing your existing **React + Tailwind** code and all 8 images (each having their own category).
-
-Right now your code handles **4 categories**, and you want me to **append the other 4 menus** (from the uploaded photos: Momos, Thali & Meals, Starters, Main Course) into the same structure with tabs + items + price + quantity.
-
-Here’s the **complete updated code with all 8 categories**:
-
-```jsx
 "use client";
 import { useState } from "react";
 
@@ -194,6 +187,3 @@ export default function MenuPage() {
       [itemId]: { quantity: value },
     }));
   };
-
- 
-```
