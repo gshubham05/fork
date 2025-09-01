@@ -23,6 +23,7 @@ export default function HeroMenu() {
       {menu.map((src, index) => (
         <CarouselItem key={index} className="basis-full">
           <div className="relative w-full  h-[35rem] sm:h-[400px] lg:h-[500px] flex items-center justify-center">
+          {console.log(src.src)}
             <Image
               src={src.src}
               alt={`Photo ${index + 1}`}

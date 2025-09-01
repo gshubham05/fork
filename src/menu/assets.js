@@ -9,10 +9,13 @@
 
 export const menu = [
   {
-    src: "/menu/beverages.jpg",
+    src: "/menu/soup.jpg",
   },
   {
-    src: "/menu/maincourse.jpg",
+    src: "/menu/starters.jpg",
+  },
+  {
+    src: "/menu/beverages.jpg",
   },
   {
     src: "/menu/momos.jpg",
@@ -20,7 +23,16 @@ export const menu = [
   {
     src: "/menu/noodles.jpg",
   },
-  // "maincourse.jpg",
+  {
+    src: "/menu/rice.jpg",
+  },
+  {
+    src: "/menu/thali.jpg",
+  },
+  {
+    src: "/menu/maincourse.jpg",
+  },
+  // ".jpg",
   // "momos.jpg",
   // "noodles.jpg",
   // "rice.jpg",
