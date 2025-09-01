@@ -21,7 +21,7 @@ export default function MenuPage() {
   const [active, setActive] = useState("soups");
 
   return (
-    <div className="w-full mx-auto p-4 sm:p-6 bg-[#0a0f0f] text-white min-h-screen">
+    <div className="new w-full mx-auto p-4 sm:p-6 bg-[#0a0f0f] text-white min-h-screen">
       <h1 className="text-3xl sm:text-4xl font-bold text-center mb-8 text-[#040A26]">
         Our Menu
       </h1>
@@ -43,7 +43,7 @@ export default function MenuPage() {
         </div>
 
         {/* ✅ Mobile Dropdown */}
-        <div className="sm:hidden mb-6">
+        <div className="sm:hidden h-[1rem] mb-6">
           <Select value={active} onValueChange={setActive}>
             <SelectTrigger className="w-full bg-black text-white rounded-xl shadow-sm">
               <SelectValue placeholder="Select Category" />
@@ -67,7 +67,7 @@ export default function MenuPage() {
               transition={{ duration: 0.4 }}
             >
               <div className="rounded-2xl shadow-md overflow-hidden w-full max-w-4xl sm:max-w-5xl">
-                <div className="relative w-full h-64 sm:h-96">
+                <div className="relative w-full h-[400px] sm:h-96">
                 {console.log(cat.img)}
                   <Image
                     src={cat.img}
