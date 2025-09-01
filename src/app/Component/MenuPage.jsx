@@ -67,7 +67,7 @@ export default function MenuPage() {
               transition={{ duration: 0.4 }}
             >
               <div className="rounded-2xl shadow-md overflow-hidden w-full max-w-4xl sm:max-w-5xl">
-                <div className="relative w-full h-[400px] sm:h-96">
+                <div className="relative top-[10px] w-full h-[580px] sm:h-96">
                 {console.log(cat.img)}
                   <Image
                     src={cat.img}

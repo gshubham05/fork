@@ -18,16 +18,16 @@ export default function HeroMenu() {
           Our Menu 
         </h2>
         </div>
-  <Carousel className="w-[468px] sm:w-full max-w-6xl">
+  <Carousel className="w-[408px] sm:w-full max-w-5xl">
     <CarouselContent>
       {menu.map((src, index) => (
         <CarouselItem key={index} className="basis-full">
-          <div className="relative w-full h-[35rem] sm:h-[400px] lg:h-[500px] flex items-center justify-center">
+          <div className="relative w-full  h-[35rem] sm:h-[400px] lg:h-[500px] flex items-center justify-center">
             <Image
               src={src.src}
               alt={`Photo ${index + 1}`}
               fill
-              className="object-cover sm:object-contain rounded-xl"
+              className="sm:object-contain rounded-xl"
             />
           </div>
         </CarouselItem>
@@ -35,8 +35,8 @@ export default function HeroMenu() {
     </CarouselContent>
 
     {/* Navigation buttons */}
-    <CarouselPrevious className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-10 bg-black/50 text-white rounded-full p-2 sm:p-3 hover:bg-black/70" />
-    <CarouselNext className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-10 bg-black/50 text-white rounded-full p-2 sm:p-3 hover:bg-black/70" />
+    <CarouselPrevious className="absolute left-2 sm:left-4 top-[3rem] -translate-y-1/2 z-10 bg-black/50 text-white rounded-full p-2 sm:p-3 hover:bg-black/70" />
+    <CarouselNext className="absolute right-2 sm:right-4 top-[3rem] -translate-y-1/2 z-10 bg-black/50 text-white rounded-full p-2 sm:p-3 hover:bg-black/70" />
   </Carousel>
 </div>
 
