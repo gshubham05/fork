@@ -18,16 +18,16 @@ export default function HeroMenu() {
           Our Menu 
         </h2>
         </div>
-  <Carousel className="w-full max-w-6xl">
+  <Carousel className="w-[468px] sm:w-full max-w-6xl">
     <CarouselContent>
       {menu.map((src, index) => (
         <CarouselItem key={index} className="basis-full">
-          <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[500px] flex items-center justify-center">
+          <div className="relative w-full h-[35rem] sm:h-[400px] lg:h-[500px] flex items-center justify-center">
             <Image
               src={src.src}
               alt={`Photo ${index + 1}`}
               fill
-              className="object-contain rounded-xl"
+              className="object-cover sm:object-contain rounded-xl"
             />
           </div>
         </CarouselItem>
