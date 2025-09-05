@@ -17,7 +17,7 @@ export default function Testimonials() {
       name: "Amit Negi",
       location: "Ballupur, Dehradun",
       comment:
-        "Tried their Chicken Manchurian and Fried Rice combo from Swiggy — hot, spicy, and spot-on. One of the best cloud kitchens around!",
+        "Tried their Chicken Manchurian and Fried Rice combo from Swiggy — hot, spicy, and spot-on. One of the best kitchens around!",
     },
     {
       name: "Priya Nautiyal",
@@ -29,13 +29,13 @@ export default function Testimonials() {
       name: "Rohit Bisht",
       location: "Patel Nagar, Dehradun",
       comment:
-        "Finally, a cloud kitchen that understands seasoning! The Chicken 65 was bold and flavorful — definitely ordering again.",
+        "Finally, a kitchen that understands seasoning! The Chicken 65 was bold and flavorful — definitely ordering again.",
     },
     {
       name: "Sneha Sharma",
       location: "Sahastradhara Road, Dehradun",
       comment:
-        "Timely delivery, hygienic packaging, and delicious Veg Biryani. What else can you ask for from a cloud kitchen?",
+        "Timely delivery, hygienic packaging, and delicious Veg Biryani. What else can you ask for from a kitchen?",
     },
     {
       name: "Deepak Joshi",
