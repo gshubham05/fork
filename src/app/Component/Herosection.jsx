@@ -27,7 +27,7 @@ export default function HomePage() {
           <span className="font-semibold">butter chicken</span> — experience the
           rich taste of India,
           <br />
-          delivered fresh from our cloud kitchen to your doorstep.
+          delivered fresh from our kitchen to your doorstep.
         </p>
       </div>
     </div>
