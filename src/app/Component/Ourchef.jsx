@@ -37,11 +37,11 @@ export default function ChefRecommend() {
       <div className="max-w-xl">
         <p className="tracking-widest text-sm mb-4">FRESH. FLAVORFUL. FAST.</p>
         <h2 className="text-5xl md:text-6xl font-extrabold leading-tight mb-4">
-          Chef’s Cloud Picks
+          Chef’s Picks
         </h2>
         <p className="text-lg text-gray-300 mb-10">
           Dive into the best of Indian-Chinese fusion, fast food favorites, and
-          mouthwatering vegetarian & chicken dishes. Cooked fresh in our cloud
+          mouthwatering vegetarian & chicken dishes. Cooked fresh in our
           kitchen and delivered hot to your doorstep — this is comfort food,
           redefined.
         </p>
